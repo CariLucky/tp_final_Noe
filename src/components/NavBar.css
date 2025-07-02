@@ -1,12 +1,15 @@
 .nav-bar {
-  background-color: #f3d9f9; /* color parecido a la imagen */
-  padding: 10px 20px;
+  background-image: url("/public/nubes.png"); 
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white; 
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Izquierda: logo + texto */
 .nav-left {
   display: flex;
   align-items: center;
@@ -16,65 +19,69 @@
 .logo-nav img {
   height: 40px;
   width: auto;
+  margin-right: 0;
+  padding-right: 10px;
 }
 
-/* El texto "Bienvenido..." estilo burbuja */
 .user-info {
-  background-color: #b97eff;
-  color: #000;
+  display: flex;
+  align-items: center;
+  color: #000000;
   font-weight: bold;
-  padding: 8px 15px;
+  font-size: 1.1rem;
+  padding: 5px 10px;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background-color: #cc9cff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
 }
 
-/* Derecha: contenedor para links y logout */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Links */
 .links ul {
   list-style: none;
   display: flex;
-  gap: 10px;
-  margin: 0;
+  gap: 1rem;
   padding: 0;
+  margin: 0;
 }
 
 .links li {
   display: inline-block;
 }
 
-.nav-button {
-  background-color: #a47aff;
-  color: white;
+.links a {
   font-weight: bold;
-  padding: 8px 14px;
-  border-radius: 8px;
+  color: #fff;
+  transition: color 0.2s;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-  background-color: #7c3aed;
-}
-
-/* Botón cerrar sesión */
-.logout-button {
-  background-color: transparent;
-  border: 2px solid #a47aff;
-  color: #7c3aed;
-  padding: 6px 14px;
-  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #8b5cf6;
   font-weight: bold;
+}
+
+.links a:hover {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.logout-button {
+  background-color: #ffffff;
+  color: #7c2dbe;
+  border: 2px solid #7c2dbe;
+  padding: 6px 12px;
+  border-radius: 20px;
   cursor: pointer;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .logout-button:hover {
-  background-color: #7c3aed;
-  color: white;
+  background-color: #7c2dbe;
+  color: #ffffff;
 }

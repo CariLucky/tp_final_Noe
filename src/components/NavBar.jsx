@@ -30,18 +30,32 @@ const NavBar = () => {
       <div className="nav-right">
         <div className="links">
           <ul>
-            <li><Link to="/" className="nav-button">Inicio</Link></li>
-            <li><Link to="/favorites" className="nav-button">Favoritos</Link></li>
+            <li>
+              <Link to="/" className="nav-button">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/favorites" className="nav-button">Favoritos</Link>
+            </li>
+            {!isAuthenticated && (
+              <>
+                <li>
+                  <Link to="/register" className="nav-button">Registrarse</Link>
+                </li>
+                <li>
+                  <Link to="/login" className="nav-button">Iniciar Sesión</Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
 
         {isAuthenticated && currentUser && (
-          <div className="user-actions">
-            <button onClick={handleLogout} className="logout-button">Cerrar Sesión</button>
-          </div>
+          <button onClick={handleLogout} className="logout-button">
+            Cerrar Sesión
+          </button>
         )}
       </div>
-    </nav>
+</nav>
   );
 };
 
