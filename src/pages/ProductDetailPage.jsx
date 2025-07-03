@@ -96,9 +96,8 @@ function ProductDetailsPage() {
     ) {
       fetchProductDetailsFromAPI();
     }
-  }, [id, productFromRedux, productsStatus, loading, error]); // Dependencias del useEffect
+  }, [id, productFromRedux, productsStatus, loading, error]); 
 
-  // Renderizado condicional basado en los estados
   if (loading) {
     return (
       <div style={{ textAlign: "center", padding: "20px" }}>
