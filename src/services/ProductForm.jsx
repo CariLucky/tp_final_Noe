@@ -160,16 +160,15 @@ const ProductForm = () => {
             required
           >
             <option value="">Seleccioná una categoría</option>
-            <option value="Joyería">Joyería</option>
-            <option value="Ropa de Hombre">Ropa de Hombre</option>
-            <option value="Ropa de Mujer">Ropa de Mujer</option>
-            <option value="Electrónica">Electrónica</option>
-            <option value="Hogar">Hogar</option>
-            <option value="Deportes">Deportes</option>
+            <option value="jewelery">Joyería</option>
+            <option value="men's clothing">Ropa de Hombre</option>
+            <option value="women's clothing">Ropa de Mujer</option>
+            <option value="electronics">Electrónica</option>
+            <option value="home">Hogar</option>
+            <option value="sports">Deportes</option>
           </select>
         </div>
 
-        {/* NUEVO CAMPO STOCK */}
         <div className="form-group">
           <label htmlFor="stock">Stock:</label>
           <input
