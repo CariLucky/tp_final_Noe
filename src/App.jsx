@@ -11,8 +11,7 @@ import ProductDetailPage from "./pages/ProductDetailPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import ProductForm from "./services/ProductForm.jsx";
-import SearchResultsPage from "./pages/SearchResultsPage.jsx"; // ✅ NUEVO
-
+import SearchResultsPage from "./pages/SearchResultsPage.jsx"; 
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import Header from "./views/Header/Header.jsx";
 import Footer from "./views/Footer/Footer.jsx";

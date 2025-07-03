@@ -30,12 +30,16 @@ const NavBar = () => {
       <div className="nav-right">
         <div className="links">
           <ul>
-            <li>
-              <Link to="/" className="nav-button">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/favorites" className="nav-button">Favoritos</Link>
-            </li>
+            {isAuthenticated && (
+              <>
+                <li>
+                  <Link to="/" className="nav-button">Inicio</Link>
+                </li>
+                <li>
+                  <Link to="/favorites" className="nav-button">Favoritos</Link>
+                </li>
+              </>
+            )}
             {!isAuthenticated && (
               <>
                 <li>
